@@ -1,0 +1,12 @@
+spring:
+    application:
+        name: catalog-service # The name of the Spring Boot application
+
+server:
+    port: 9001 # The port on which the server will listen
+    tomcat:
+        connection-timeout: 2s # Maximum time the server will wait for a connection to be established
+        keep-alive-timeout: 15s # Time to keep the connection alive between HTTP requests
+    threads: 
+        max: 50 # Maximum number of server threads
+        min-spare: 5 # Minimum number of spare threads to keep running
